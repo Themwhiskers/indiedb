@@ -1,5 +1,5 @@
 import Layout from "./layout/Layout"
-className='cursor'
+
 const App = () => {
 
   return (
