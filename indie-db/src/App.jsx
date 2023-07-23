@@ -1,10 +1,11 @@
+import Layout from "./layout/Layout"
 
 const App = () => {
 
   return (
-    <>
-    <p>Hello world</p>
-    </>
+    <Layout>
+
+    </Layout>
   )
 }
 
