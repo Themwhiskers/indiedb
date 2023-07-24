@@ -2,6 +2,7 @@ import CardBody from './components/CardBody';
 import Card from '@mui/material/Card';
 import CardTitle from './components/CardTitle';
 import CardDisplay from './components/CardDisplay';
+import CardActionBar from './components/CardActionBar';
 
 const MyCard = () => {
     return (
@@ -9,6 +10,7 @@ const MyCard = () => {
         <CardDisplay/>
         <CardTitle/>
         <CardBody/>
+        <CardActionBar/>
     </Card>
     );
 };

@@ -6,7 +6,9 @@ const CardBody = () => {
         <Typography><strong>Development:</strong> Christopher Jurney, Gavin Simon, Andrew Wang</Typography>
         <Typography><strong>Art Design:</strong> Jen Zee</Typography>
         <Typography><strong>Original Music:</strong> Darren Korb</Typography>
-        <Divider sx={{marginTop: 1, marginBottom: 1 }}><Chip label='Platforms:'/></Divider>
+        <Divider sx={{marginTop: 1, marginBottom: 1 }}>
+            <Chip label='Platforms:'/>
+        </Divider>
         <Typography>Steam, Xbox360, Xbox One, PlayStation 4</Typography>
         <Divider sx={{marginTop: 1, marginBottom: 1 }}/>
         <Box display='flex' justifyContent='space-around' >
