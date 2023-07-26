@@ -2,7 +2,7 @@ import CardMedia from "@mui/material/CardMedia";
 
 const CardDisplay = () => {
     return (
-    <CardMedia component="img" height="360" src='https://upload.wikimedia.org/wikipedia/en/4/41/Transistor_art.jpg'/>
+    <CardMedia component="img" height="200" src='https://www.rengenmarketing.com/wp-content/uploads/2021/02/supergiantgames.jpg'/>
     );
 };
 

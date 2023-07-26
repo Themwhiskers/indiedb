@@ -1,8 +1,8 @@
 import { Box, IconButton } from "@mui/material";
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditIcon from '@mui/icons-material/Edit';
-import CallIcon from '@mui/icons-material/Call';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const CardActionBar = () => {
     return (
@@ -17,7 +17,7 @@ const CardActionBar = () => {
             </Box>
             <Box>
                 <IconButton>
-                    <CallIcon/>
+                    <TwitterIcon/>
                 </IconButton>
                 <IconButton>
                     <FavoriteBorderIcon/>

@@ -1,23 +1,28 @@
-const cardData = {
-    titleId: '',
-    titleName: 'Transistor',
-    titleStudio: 'Super Giant Games',
-    devTeam: [
-        'Christopher Jurney',
-        'Gavin Simon',
-        'Andrew Wang'
-    ],
-    artBy: [
-        'Jen Zee'
-    ],
-    composer: 'Darren Korb',
-    platforms: [
-        'Steam',
-        'Xbox360',
-        'Xbox One',
-        'PlayStation 4',
-    ],
-    steamPage: 'https://store.steampowered.com/app/237930/Transistor/',
-    gogPage: 'https://www.gog.com/en/game/transistor',
-    psnPage: 'https://store.playstation.com/en-us/product/UP2125-CUSA00502_00-TRANSISTORGAME00'
-}
+const cardData = [
+    {
+        studioName: 'Super Giant Games',
+        __id: '',
+        founders: ['Amir Rao', 'Gavin Simon'],
+        devTeam: ['Christopher Jurney', 'Gavin Simon', 'Andrew Wang'],
+        artTeam: ['Jen Zee'],
+        composer: ['Darren Korb'],
+        titles: [
+            {
+                __id: '',
+                titleName: 'Bastion',
+                boxArt: '',
+                trailer: '',
+                titleDescription: '',
+                releaseDate: '2011',
+                platforms: ['']
+            }
+        ],
+        location: 'San Francisco, California',
+        connect: {
+            steam: 'https://store.steampowered.com/developer/supergiantgames',
+            gog: 'https://www.gog.com/en/games?developers=supergiant-games',
+            site: 'https://www.supergiantgames.com/',
+        },
+        twitter: ''
+    }
+];

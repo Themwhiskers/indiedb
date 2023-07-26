@@ -3,7 +3,7 @@ import { Box, CardHeader } from '@mui/material';
 const CardTitle = () => {
     return (
         <Box>
-            <CardHeader title='Transistor' subheader='Super Giant Games'/>
+            <CardHeader title='Super Giant Games' subheader='San Francisco, California'/>
         </Box>
     );
 };
