@@ -8,17 +8,17 @@ import CardGames from './components/CardGames';
 import CardShops from './components/CardShops';
 import { cardData } from '../../../../utils/initData/initData';
 
-const MyCard = () => {
+const MyCard = ({ card = cardData }) => {
     return (
-    <Card sx={{width: 300}}>
-        <CardDisplay image={cardData.image}/>
-        <CardTitle name={cardData.name} location={cardData.location}/>
+    <Card sx={{ width: 300 }}>
+        <CardDisplay image={card.image}/>
+        <CardTitle name={card.name} location={cardData.location}/>
         <Divider><Chip label='Team:'/></Divider>
-        <CardTeam team={ cardData.team}/>
+        <CardTeam team={ card.team}/>
         <Divider><Chip label='Titles:'/></Divider>
-        <CardGames/>
+        <CardGames titles={ card.titles } />
         <Divider><Chip label='Shop Front:'/></Divider>
-        <CardShops/>
+        <CardShops links={ card.links }/>
         <CardActionBar/>
     </Card>
     );

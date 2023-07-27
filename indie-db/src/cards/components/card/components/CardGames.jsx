@@ -1,10 +1,15 @@
-import { CardContent, Chip } from "@mui/material";
+import { Box, Chip } from "@mui/material";
 
-const CardGames = () => {
+const CardGames = ({ titles }) => {
     return (
-        <CardContent>
-            <Chip label='Bastion'/>
-        </CardContent>
+        <Box sx={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            flexWrap: 'wrap',
+            padding: '1rem'
+        }}>
+            { titles.map((title) => <Chip key={ title._id } label={ title.name } sx={{ margin: '5px 5px 0' }}/>) }
+        </Box>
     );
 };
 

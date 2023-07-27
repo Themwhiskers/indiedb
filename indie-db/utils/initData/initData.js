@@ -18,7 +18,7 @@ export const cardData =
         [
             {
                 _id: '',
-                titleName: 'Bastion',
+                name: 'Bastion',
                 boxArt: '',
                 trailer: '',
                 titleDescription: '',
@@ -27,7 +27,7 @@ export const cardData =
             },
             {
                 _id: '',
-                titleName: 'Transistor',
+                name: 'Transistor',
                 boxArt: '',
                 trailer: '',
                 titleDescription: '',
@@ -36,7 +36,7 @@ export const cardData =
             },
             {
                 _id: '',
-                titleName: 'Pyre',
+                name: 'Pyre',
                 boxArt: '',
                 trailer: '',
                 titleDescription: '',
@@ -45,7 +45,7 @@ export const cardData =
             },
             {
                 _id: '',
-                titleName: 'Hades',
+                name: 'Hades',
                 boxArt: '',
                 trailer: '',
                 titleDescription: '',
@@ -53,7 +53,7 @@ export const cardData =
                 platforms: {}
             }
         ],
-        connect: {
+        links: {
             steam: 'https://store.steampowered.com/developer/supergiantgames',
             gog: 'https://www.gog.com/en/games?developers=supergiant-games',
             site: 'https://www.supergiantgames.com/',

@@ -1,11 +1,12 @@
 import { Box, Button } from "@mui/material";
 
-const CardShops = () => {
+const CardShops = ({ links }) => {
+    const { steam, gog, site } = links;
     return (
         <Box display='flex' justifyContent='space-evenly'>
-            <Button href='https://store.steampowered.com/developer/supergiantgames'>Steam</Button>
-            <Button href='https://www.gog.com/en/games?developers=supergiant-games'>GOG</Button>
-            <Button href='https://www.supergiantgames.com/'>Site</Button>
+            <Button href={ steam }>Steam</Button>
+            <Button href={ gog }>GOG</Button>
+            <Button href={ site }>Site</Button>
         </Box>
     );
 };
