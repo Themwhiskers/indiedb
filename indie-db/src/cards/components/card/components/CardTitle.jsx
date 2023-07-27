@@ -1,9 +1,10 @@
 import { Box, CardHeader } from '@mui/material';
 
-const CardTitle = () => {
+const CardTitle = ({ name, location }) => {
+
     return (
         <Box>
-            <CardHeader title='Super Giant Games' subheader='San Francisco, California'/>
+            <CardHeader title={ name } subheader={ location }/>
         </Box>
     );
 };

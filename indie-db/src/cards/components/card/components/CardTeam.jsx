@@ -1,12 +1,15 @@
 import { CardContent, Typography } from "@mui/material";
 
-const CardTeam = () => {
+const CardTeam = ({ team }) => {
+
+    const { founders, devTeam, artTeam, composer } = team;
+
     return (
     <CardContent>
-        <Typography><strong>Founders:</strong> Amir Rao, Gavin Simon</Typography>
-        <Typography><strong>Dev Team:</strong> Christopher Jurney, Gavin Simon, Andrew Wang</Typography>
-        <Typography><strong>Art By:</strong> Jen Zee</Typography>
-        <Typography><strong>Original Music:</strong> Darren Korb</Typography>
+        <Typography><strong>Founders:</strong> { founders }</Typography>
+        <Typography><strong>Dev Team:</strong> { devTeam }</Typography>
+        <Typography><strong>Art By:</strong> { artTeam }</Typography>
+        <Typography><strong>Original Music:</strong> { composer }</Typography>
     </CardContent>
     );
 };
