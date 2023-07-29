@@ -1,6 +1,7 @@
 import { Box, Chip } from "@mui/material";
 
 const CardGames = ({ titles }) => {
+
     return (
         <Box sx={{
             display: 'flex',

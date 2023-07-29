@@ -8,7 +8,7 @@ import CardGames from './components/CardGames';
 import CardShops from './components/CardShops';
 import { cardData } from '../../../../utils/initData/initData';
 
-const MyCard = ({ card = cardData }) => {
+const MyCard = ({ card }) => {
     return (
     <Card sx={{ width: 300 }}>
         <CardDisplay image={card.image}/>

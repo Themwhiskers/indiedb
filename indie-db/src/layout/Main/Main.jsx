@@ -1,5 +1,6 @@
-import MyCard from "../../cards/components/card/Card";
+import { cardData as cards } from '../../../utils/initData/initData';
 import Paper from '@mui/material/Paper';
+import Cards from '../../cards/components/card/pages/Cards';
 
 const Main = () => {
     return(
@@ -7,7 +8,7 @@ const Main = () => {
         minHeight: '90vh',
         backgroundColor:'#D9D9D9'
     }}>
-        <MyCard/>
+        <Cards cards={cards} />
     </Paper>
     );
 };

@@ -1,12 +1,12 @@
 export const cardData = 
-    {
+    [{
+        _id: crypto.randomUUID(),
         name: 'Super Giant Games',
         location: 'San Francisco, California',
-        _id: '',
         image: {
             url: 'https://www.rengenmarketing.com/wp-content/uploads/2021/02/supergiantgames.jpg',
             alt: 'Super Giant Games',
-            _id: ''
+            _id: crypto.randomUUID()
             },
         team:{
             founders: ['Amir Rao', 'Gavin Simon'],
@@ -17,7 +17,7 @@ export const cardData =
         titles:
         [
             {
-                _id: '',
+                _id: crypto.randomUUID(),
                 name: 'Bastion',
                 boxArt: '',
                 trailer: '',
@@ -26,7 +26,7 @@ export const cardData =
                 platforms: {}
             },
             {
-                _id: '',
+                _id: crypto.randomUUID(),
                 name: 'Transistor',
                 boxArt: '',
                 trailer: '',
@@ -35,7 +35,7 @@ export const cardData =
                 platforms: {}
             },
             {
-                _id: '',
+                _id: crypto.randomUUID(),
                 name: 'Pyre',
                 boxArt: '',
                 trailer: '',
@@ -44,7 +44,7 @@ export const cardData =
                 platforms: {}
             },
             {
-                _id: '',
+                _id: crypto.randomUUID(),
                 name: 'Hades',
                 boxArt: '',
                 trailer: '',
@@ -59,5 +59,6 @@ export const cardData =
             site: 'https://www.supergiantgames.com/',
         },
         twitter: ''
-    }
+    },
+    ]
 ;
