@@ -3,7 +3,7 @@ import { CardContent, Typography } from "@mui/material";
 const CardTeam = ({ team }) => {
 
     const { founders, devTeam, artTeam, composer } = team;
-    const populate = ( department ) => department.map((member) => ' ' + member + ', ');
+   1 const populate = ( department ) => department.map((member) => ' ' + member + ', ');
 
     return (
     <CardContent>
