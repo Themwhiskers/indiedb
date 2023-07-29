@@ -1,0 +1,35 @@
+{
+        _id: crypto.randomUUID(),
+        name: '',
+        location: '',
+        image: {
+            url: '',
+            alt: '',
+            _id: crypto.randomUUID()
+            },
+        team:{
+            founders: [''],
+            devTeam: [''],
+            artTeam: [''],
+            composer: [''],
+        },
+        titles:
+        [
+            {
+                _id: crypto.randomUUID(),
+                name: '',
+                boxArt: '',
+                trailer: '',
+                titleDescription: '',
+                releaseDate: '',
+                platforms: {}
+            },
+            
+        ],
+        links: {
+            steam: '',
+            gog: '',
+            site: '',
+        },
+        twitter: ''
+    }

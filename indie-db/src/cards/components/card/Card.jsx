@@ -10,7 +10,7 @@ import { cardData } from '../../../../utils/initData/initData';
 
 const MyCard = ({ card }) => {
     return (
-    <Card sx={{ width: 300 }}>
+    <Card sx={{ width: 300, mt: 2, ml: 2 }}>
         <CardDisplay image={card.image}/>
         <CardTitle name={card.name} location={cardData.location}/>
         <Divider><Chip label='Team:'/></Divider>

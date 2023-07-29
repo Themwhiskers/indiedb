@@ -60,5 +60,49 @@ export const cardData =
         },
         twitter: ''
     },
+    {
+        _id: crypto.randomUUID(),
+        name: 'Team Cherry',
+        location: 'Adelaide, South Australia',
+        image: {
+            url: 'https://images.squarespace-cdn.com/content/v1/606d4deb4db8c15ea53b3624/c176e609-2480-47a0-ab31-536b0e423e9b/logo2.png',
+            alt: '',
+            _id: crypto.randomUUID()
+            },
+        team:{
+            founders: [''],
+            devTeam: [''],
+            artTeam: [''],
+            composer: [''],
+        },
+        titles:
+        [
+            {
+                _id: crypto.randomUUID(),
+                name: 'Hollow Knight',
+                boxArt: '',
+                trailer: '',
+                titleDescription: '',
+                releaseDate: '2017',
+                platforms: {}
+            },
+            {
+                _id: crypto.randomUUID(),
+                name: 'Silk Song',
+                boxArt: '',
+                trailer: '',
+                titleDescription: '',
+                releaseDate: 'TBA',
+                platforms: {}
+            }
+            
+        ],
+        links: {
+            steam: '',
+            gog: '',
+            site: '',
+        },
+        twitter: ''
+    }
     ]
 ;
