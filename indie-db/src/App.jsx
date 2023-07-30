@@ -1,12 +1,15 @@
-import CardsPage from './cards/pages/CardsPage';
 import Layout from './layout/Layout';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './routes/Router';
 
 const App = () => {
 
   return (
-    <Layout>
-      <CardsPage/>
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Router/>
+      </Layout>
+    </BrowserRouter>
   );
 };
 

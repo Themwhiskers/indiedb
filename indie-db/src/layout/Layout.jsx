@@ -2,13 +2,9 @@ import Main from "./Main/Main";
 
 const Layout = ({ children }) => {
     return(
-        <>
-        {/*Header*/}
         <Main>
-            { children }
+            {children}
         </Main>
-        {/*Footer*/}
-        </>
     );
 };
 

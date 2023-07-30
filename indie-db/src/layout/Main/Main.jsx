@@ -1,5 +1,4 @@
 import Paper from '@mui/material/Paper';
-import CardsPage from '../../cards/pages/CardsPage';
 
 const Main = ({children}) => {
     return(
