@@ -1,10 +1,12 @@
-import Main from './layout/Main/Main'
+import CardsPage from './cards/pages/CardsPage';
+import Layout from './layout/Layout';
 
 const App = () => {
 
   return (
-    <Main>
-    </Main>
+    <Layout>
+      <CardsPage/>
+    </Layout>
   );
 };
 
