@@ -1,7 +1,7 @@
 import Card from './card/components/Card'
 import { Grid } from '@mui/material';
 
-const Cards = ({ cards }) => {
+const Cards = ({ cards, onDelete }) => {
 
     if (!cards) {
         return <h1>No cards here yet</h1>
@@ -12,7 +12,11 @@ const Cards = ({ cards }) => {
             {cards.map((card) =>{
                 return (
                     <Grid item xs={12} sm={6} md={4} lg={3} key={card._id}>
-                        <Card key={card._id} card={card}/>
+                        <Card
+                            key={card._id}
+                            card={card}
+                            handleDeleteCard={onDelete}
+                        />
                     </Grid>
                 );
             })}

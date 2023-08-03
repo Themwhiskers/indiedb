@@ -4,7 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import CallIcon from '@mui/icons-material/Call';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-const CardActionBar = () => {
+const CardActionBar = ({ cardID, handleDeleteCard }) => {
     return (
         <>
         <CardActions disableSpacing sx={{
@@ -12,7 +12,9 @@ const CardActionBar = () => {
             justifyContent: 'space-between'
         }}>
             <Box>
-                <IconButton>
+                <IconButton onClick={
+                    () => handleDeleteCard(cardID)
+                }>
                     <DeleteIcon/>
                 </IconButton>
                 <IconButton>

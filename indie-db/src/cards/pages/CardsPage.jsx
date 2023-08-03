@@ -1,38 +1,26 @@
 import { Container } from "@mui/material";
 import { useEffect, useState } from "react";
-import { getCards } from '../services/cardApiService'
-import Cards from '../Cards';
 import PageHeader from "../../components/PageHeader";
-import Spinner from '../../components/Spinner';
-import Error from "../../components/Error";
+import CardsFeedback from "../CardsFeedback";
+import useCards from "../hooks/useCards";
 
 const CardsPage = () => {
 
-    const [ cards, setCards ] = useState();
-    const [ error, setError ] = useState(null);
-    const [ isPending, setPending ] = useState(false);
+    const {cards, error, isPending, handleGetCards } = useCards();
 
-    useEffect(() => {
-        setPending(true);
-        getCards()
-            .then((data) => {
-                setCards(data);
-            })
-            .catch((error) => {
-                setError(error);
-            })
-            .finally(() => {
-                setPending(false);
-            })
-            }, []);
+    useEffect(() => { handleGetCards(); }, []);
+
+    const onDeleteCard = (cardId) => console.log(`Delete card:${cardId}`);
 
     return (
         <Container>
             <PageHeader title='Cards page' subtitle='Here you can browse through all the business cards available'/>
-            {isPending && <Spinner />}
-            {error && <Error errorMessage={error}/>}
-            {cards && !cards.length && <p>It appears we don't have what you're looking for..</p>}
-            {cards && !!cards.length && <Cards cards={cards}/>}
+            <CardsFeedback
+                isPending={isPending}
+                error={error}
+                cards={cards}
+                onDelete={onDeleteCard}
+                />
         </Container>
     );
 };

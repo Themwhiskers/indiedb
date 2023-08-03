@@ -3,7 +3,7 @@ import CardBody from "./CardBody";
 import CardHead from './CardHead';
 import CardActionBar from './CardActionBar';
 
-const Card = ({ card }) => {
+const Card = ({ card, handleDeleteCard }) => {
     return(
         <MuiCard sx={{
             minWidth: 280,
@@ -11,7 +11,10 @@ const Card = ({ card }) => {
         }}>
             <CardHead image={card.image}/>
             <CardBody card={card}/>
-            <CardActionBar/>
+            <CardActionBar
+                cardID={card._id}
+                handleDeleteCard={handleDeleteCard}
+            />
         </MuiCard>
     );
 };
