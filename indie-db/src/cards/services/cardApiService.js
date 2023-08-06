@@ -11,3 +11,21 @@ export const getCards = async () => {
         return Promise.reject(error.message);
     }
 }
+
+export const getCard = async (id) => {
+    try {
+        const { data } = await axios.get(`${apiUrl}/cards/${id}`);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+}
+
+export const deleteCard = async (id) => {
+    try {
+        const { data } = await axios.delete(`${apiUrl}/cards/${id}`);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+}
