@@ -18,11 +18,11 @@ const Card = ({ card, handleDeleteCard }) => {
                 onClick={() => {navigate(`${ROUTES.CARD_INFO}/${card._id}`)}}>
                 <CardHead image={card.image}/>
                 <CardBody card={card}/>
-                <CardActionBar
-                    cardID={card._id}
-                    handleDeleteCard={handleDeleteCard}
-                />
             </CardActionArea>
+            <CardActionBar
+                cardID={card._id}
+                handleDeleteCard={handleDeleteCard}
+                />
         </MuiCard>
     );
 };

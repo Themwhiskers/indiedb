@@ -1,5 +1,5 @@
 import axios from 'axios';
-import '../../hooks/useAxios';
+import useAxios from '../hooks/useAxios';
 
 const apiUrl = import.meta.env.REACT_APP_API_URL || 'http://localhost:8181';
 
