@@ -1,5 +1,4 @@
 import axios from 'axios';
-import useAxios from '../hooks/useAxios';
 
 const apiUrl = import.meta.env.REACT_APP_API_URL || 'http://localhost:8181';
 
@@ -20,6 +19,14 @@ export const getCard = async (id) => {
         return Promise.reject(error.message);
     }
 }
+export const getMyCards = async () => {
+    try {
+        const { data } = await axios.get(`${apiUrl}/cards/my-cards`);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+}
 
 export const deleteCard = async (id) => {
     try {
@@ -29,3 +36,30 @@ export const deleteCard = async (id) => {
         return Promise.reject(error.message);
     }
 }
+
+export const createCard = async card => {
+    try {
+        const { data } = await axios.post(`${apiUrl}/cards`, card);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+}
+
+export const updateCard = async (id, card) => {
+    try {
+        const { data } = await axios.put(`${apiUrl}/cards/${id}`, card);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+}
+
+export const changeLikeStatus = async (cardId) => {
+    try {
+        const { data } = await axios.patch(`${apiUrl}/cards/${cardId}`);
+        return data;
+    } catch (error) {
+        return Promise.reject(error.message);
+    }
+};
